@@ -6,7 +6,7 @@ public class Life: MonoBehaviour
 	//zycia
 	public GUITexture lifesGUITextures;
 	public Texture2D[] lifeTextures;
-	int zycia = 3;
+	int lifes = 3;
 
     private void Awake()
     {
@@ -26,6 +26,6 @@ public class Life: MonoBehaviour
 	void Update()
 	{
         Debug.Log("test2");
-        lifesGUITextures.texture = lifeTextures[zycia];		
+        lifesGUITextures.texture = lifeTextures[lifes];		
 	}
 }
