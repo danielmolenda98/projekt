@@ -11,6 +11,5 @@ public class Death : MonoBehaviour
         {
 			other.transform.position=spawnPoint;
 		}
-	
 	}
 }
