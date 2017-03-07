@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d16e063fea3ca054b9202b552d5aec6b
+guid: 4ea04da0f5326cd46a58a682d1961c68
 timeCreated: 1478738454
 licenseType: Store
 TextureImporter:
@@ -14,12 +14,12 @@ TextureImporter:
     21300014: Walk_DG_03
     21300016: Walk_DG_08
     21300018: Walk_DG_alt_02
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -31,10 +31,8 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 4096
@@ -45,9 +43,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -55,12 +51,28 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Walk_DG_alt_01
+    - serializedVersion: 2
+      name: Walk_DG_alt_01
       rect:
         serializedVersion: 2
         x: 0
@@ -70,31 +82,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -128}
-        - {x: 6, y: -128}
-        - {x: 19, y: -123}
-        - {x: 66, y: -46}
-        - {x: 66, y: -9}
-        - {x: 27, y: 48}
-        - {x: 24, y: 50}
-        - {x: -16, y: 50}
-        - {x: -40, y: 45}
-        - {x: -43, y: 24}
-        - {x: -36, y: -6}
-        - {x: -18, y: -9}
-        - {x: -16, y: -1}
-        - {x: -20, y: 3}
-        - {x: -9, y: -2}
-        - {x: -24, y: -26}
-        - {x: -63, y: -27}
-        - {x: -63, y: -107}
-        - {x: -53, y: -127}
-        - {x: -51, y: -128}
-        - {x: -40, y: -128}
-        - {x: -33, y: -125}
-        - {x: -29, y: -123}
-    - name: Walk_DG_02
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_02
       rect:
         serializedVersion: 2
         x: 0
@@ -104,23 +95,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32, y: 49}
-        - {x: -44, y: 25}
-        - {x: -39, y: 3}
-        - {x: -29, y: -6}
-        - {x: -20, y: -8}
-        - {x: -16, y: -6}
-        - {x: -13, y: -40}
-        - {x: -61, y: -27}
-        - {x: -66, y: -35}
-        - {x: -66, y: -60}
-        - {x: -58, y: -128}
-        - {x: 22, y: -128}
-        - {x: 64, y: -81}
-        - {x: 64, y: 33}
-        - {x: 36, y: 49}
-    - name: Walk_DG_06
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_06
       rect:
         serializedVersion: 2
         x: 0
@@ -130,29 +108,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 50}
-        - {x: -38, y: 49}
-        - {x: -42, y: 1}
-        - {x: -25, y: -11}
-        - {x: -17, y: -9}
-        - {x: -16, y: -2}
-        - {x: -18, y: -2}
-        - {x: -18, y: 4}
-        - {x: -20, y: 6}
-        - {x: -21, y: 8}
-        - {x: -20, y: 7}
-        - {x: -16, y: 2}
-        - {x: -4, y: -5}
-        - {x: -62, y: -27}
-        - {x: -64, y: -31}
-        - {x: -64, y: -94}
-        - {x: -59, y: -128}
-        - {x: 21, y: -128}
-        - {x: 65, y: -37}
-        - {x: 65, y: -1}
-        - {x: 29, y: 50}
-    - name: Walk_DG_07
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_07
       rect:
         serializedVersion: 2
         x: 257
@@ -162,17 +121,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 30, y: 50}
-        - {x: -57, y: 50}
-        - {x: -65, y: 39}
-        - {x: -65, y: -111}
-        - {x: -59, y: -128}
-        - {x: 16, y: -128}
-        - {x: 17, y: -121}
-        - {x: 64, y: -35}
-        - {x: 64, y: 35}
-    - name: Walk_DG_05
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_05
       rect:
         serializedVersion: 2
         x: 257
@@ -182,27 +134,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15, y: -121}
-        - {x: 66, y: -20}
-        - {x: 66, y: -10}
-        - {x: 64, y: -2}
-        - {x: 20, y: 50}
-        - {x: -15, y: 50}
-        - {x: -42, y: 44}
-        - {x: -42, y: -1}
-        - {x: -17, y: -14}
-        - {x: -17, y: -3}
-        - {x: -4, y: -6}
-        - {x: -33, y: -40}
-        - {x: -51, y: -29}
-        - {x: -60, y: -28}
-        - {x: -64, y: -33}
-        - {x: -64, y: -67}
-        - {x: -62, y: -107}
-        - {x: -53, y: -128}
-        - {x: 13, y: -128}
-    - name: Walk_DG_01
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_01
       rect:
         serializedVersion: 2
         x: 257
@@ -212,31 +147,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: -128}
-        - {x: 6, y: -128}
-        - {x: 19, y: -123}
-        - {x: 66, y: -46}
-        - {x: 66, y: -9}
-        - {x: 27, y: 48}
-        - {x: 24, y: 50}
-        - {x: -16, y: 50}
-        - {x: -40, y: 45}
-        - {x: -43, y: 24}
-        - {x: -36, y: -6}
-        - {x: -18, y: -9}
-        - {x: -16, y: -1}
-        - {x: -20, y: 3}
-        - {x: -9, y: -2}
-        - {x: -24, y: -26}
-        - {x: -63, y: -27}
-        - {x: -63, y: -107}
-        - {x: -53, y: -127}
-        - {x: -51, y: -128}
-        - {x: -40, y: -128}
-        - {x: -33, y: -125}
-        - {x: -29, y: -123}
-    - name: Walk_DG_04
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_04
       rect:
         serializedVersion: 2
         x: 514
@@ -246,29 +160,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 50}
-        - {x: -38, y: 49}
-        - {x: -42, y: 1}
-        - {x: -25, y: -11}
-        - {x: -17, y: -9}
-        - {x: -16, y: -2}
-        - {x: -18, y: -2}
-        - {x: -18, y: 4}
-        - {x: -20, y: 6}
-        - {x: -21, y: 8}
-        - {x: -20, y: 7}
-        - {x: -16, y: 2}
-        - {x: -4, y: -5}
-        - {x: -62, y: -27}
-        - {x: -64, y: -31}
-        - {x: -64, y: -94}
-        - {x: -59, y: -128}
-        - {x: 21, y: -128}
-        - {x: 65, y: -37}
-        - {x: 65, y: -1}
-        - {x: 29, y: 50}
-    - name: Walk_DG_03
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_03
       rect:
         serializedVersion: 2
         x: 514
@@ -278,17 +173,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 30, y: 50}
-        - {x: -57, y: 50}
-        - {x: -65, y: 39}
-        - {x: -65, y: -111}
-        - {x: -59, y: -128}
-        - {x: 16, y: -128}
-        - {x: 17, y: -121}
-        - {x: 64, y: -35}
-        - {x: 64, y: 35}
-    - name: Walk_DG_08
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_08
       rect:
         serializedVersion: 2
         x: 514
@@ -298,23 +186,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32, y: 49}
-        - {x: -44, y: 25}
-        - {x: -39, y: 3}
-        - {x: -29, y: -6}
-        - {x: -20, y: -8}
-        - {x: -16, y: -6}
-        - {x: -13, y: -40}
-        - {x: -61, y: -27}
-        - {x: -66, y: -35}
-        - {x: -66, y: -60}
-        - {x: -58, y: -128}
-        - {x: 22, y: -128}
-        - {x: 64, y: -81}
-        - {x: 64, y: 33}
-        - {x: 36, y: 49}
-    - name: Walk_DG_alt_02
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Walk_DG_alt_02
       rect:
         serializedVersion: 2
         x: 771
@@ -324,22 +199,8 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32, y: 49}
-        - {x: -44, y: 25}
-        - {x: -39, y: 3}
-        - {x: -29, y: -6}
-        - {x: -20, y: -8}
-        - {x: -16, y: -6}
-        - {x: -13, y: -40}
-        - {x: -61, y: -27}
-        - {x: -66, y: -35}
-        - {x: -66, y: -60}
-        - {x: -58, y: -128}
-        - {x: 22, y: -128}
-        - {x: 64, y: -81}
-        - {x: 64, y: 33}
-        - {x: 36, y: 49}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
