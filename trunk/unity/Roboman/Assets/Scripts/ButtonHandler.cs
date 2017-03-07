@@ -6,7 +6,7 @@ namespace UnityStandardAssets.CrossPlatformInput
     public class ButtonHandler : MonoBehaviour
     {
 
-        public string Name;
+        public string name;
 
         void OnEnable()
         {
@@ -15,31 +15,31 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         public void SetDownState()
         {
-            CrossPlatformInputManager.SetButtonDown(Name);
+            CrossPlatformInputManager.SetButtonDown(name);
         }
 
 
         public void SetUpState()
         {
-            CrossPlatformInputManager.SetButtonUp(Name);
+            CrossPlatformInputManager.SetButtonUp(name);
         }
 
 
         public void SetAxisPositiveState()
         {
-            CrossPlatformInputManager.SetAxisPositive(Name);
+            CrossPlatformInputManager.SetAxisPositive(name);
         }
 
 
         public void SetAxisNeutralState()
         {
-            CrossPlatformInputManager.SetAxisZero(Name);
+            CrossPlatformInputManager.SetAxisZero(name);
         }
 
 
         public void SetAxisNegativeState()
         {
-            CrossPlatformInputManager.SetAxisNegative(Name);
+            CrossPlatformInputManager.SetAxisNegative(name);
         }
 
         public void Update()
