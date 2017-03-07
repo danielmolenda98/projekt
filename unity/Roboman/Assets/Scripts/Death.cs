@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class Death : MonoBehaviour {
-
+public class Death : MonoBehaviour
+{
 	public Vector3 spawnPoint;
 
 	void OnCollisionEnter2D(Collision2D other)
