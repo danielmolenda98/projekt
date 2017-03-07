@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praktyki Alpha v2.0", "Praktyki Alpha v2.0.csproj", "{49A20F15-6B79-CCA3-7E9A-9BACB2C1A625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praktyki Alpha v2.0.Editor", "Praktyki Alpha v2.0.Editor.csproj", "{D5B3324C-036A-C7A8-5715-AAB33C592373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49A20F15-6B79-CCA3-7E9A-9BACB2C1A625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A20F15-6B79-CCA3-7E9A-9BACB2C1A625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A20F15-6B79-CCA3-7E9A-9BACB2C1A625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A20F15-6B79-CCA3-7E9A-9BACB2C1A625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B3324C-036A-C7A8-5715-AAB33C592373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B3324C-036A-C7A8-5715-AAB33C592373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B3324C-036A-C7A8-5715-AAB33C592373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B3324C-036A-C7A8-5715-AAB33C592373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
