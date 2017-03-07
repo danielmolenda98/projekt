@@ -5,28 +5,27 @@ public class Life: MonoBehaviour
 {
 	//zycia
 	public GUITexture zyciaGUITextura;
-	public Texture2D[] zyciaTekstura;
+	public Texture2D[] lifeTextures;
 	int zycia = 3;
 
-		//Use this for initalization
-		void Start()
-		{
-		}
+    private void Awake()
+    {
+        Debug.Log("test0");
+    }
+    //Use this for initalization
 
-		//Update is called once per frame
-		void Update()
-		{
-			if (zycia == 2)
-			{
-				zyciaGUITextura.texture = zyciaTekstura[zycia];
-			}
-			else if (zycia == 1)
-			{
-				zyciaGUITextura.texture = zyciaTekstura[zycia];
-			}
-			else if (zycia == 0)
-			{
-				zyciaGUITextura.texture = zyciaTekstura[zycia];
-			}
-		}
+    //Use this for initalization
+    void Start()
+    {
+        if (true)
+        {
+        }
+        Debug.Log("test");
+    }
+	//Update is called once per frame
+	void Update()
+	{
+        Debug.Log("test2");
+        zyciaGUITextura.texture = lifeTextures[zycia];		
+	}
 }
