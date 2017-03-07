@@ -4,7 +4,7 @@ using System.Collections;
 public class Life: MonoBehaviour
 {
 	//zycia
-	public GUITexture zyciaGUITextura;
+	public GUITexture lifesGUITextures;
 	public Texture2D[] lifeTextures;
 	int zycia = 3;
 
@@ -26,6 +26,6 @@ public class Life: MonoBehaviour
 	void Update()
 	{
         Debug.Log("test2");
-        zyciaGUITextura.texture = lifeTextures[zycia];		
+        lifesGUITextures.texture = lifeTextures[zycia];		
 	}
 }
