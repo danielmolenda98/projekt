@@ -15,7 +15,6 @@ public class Death : MonoBehaviour
 
     IEnumerator Respawn()
     {
-        // Te dwie linijki potrzebne tylko do pokazania efektu
         yield return new WaitForSeconds(respawnTime);
         gameObject.transform.position = spawnPoint;
     }
