@@ -16,9 +16,9 @@ TagManager:
   - 
   - 
   - Obstacle
-  - Gracz
+  - Player
   - wall
-  - 
+  - camera
   - 
   - 
   - 
