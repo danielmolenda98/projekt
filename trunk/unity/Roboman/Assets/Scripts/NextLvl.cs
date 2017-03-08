@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NextLvl : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class NextLvl : MonoBehaviour
     {
 		if (other.transform.tag == "Player")
         {
-			Application.LoadLevel (nextlvl);
+			SceneManager.LoadScene (nextlvl);
 		}
 	}
 }

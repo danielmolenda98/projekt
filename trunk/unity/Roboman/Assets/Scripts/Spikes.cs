@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
+    public Transform startPoint;
     void OnTriggerEnter2D (Collider2D other)
     {
 		if (other.gameObject.name == "Player")
         {
-            other.gameObject.GetComponent<Animator>().SetTrigger("fail");
+            
         }
 	}
 }
