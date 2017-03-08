@@ -22,7 +22,7 @@ namespace UnityStandardAssets._2D
 
         public Transform startPoint;
 
-        void RestartHero()1
+        void RestartHero()
         {
             gameObject.transform.position = startPoint.position;
         }

@@ -1,17 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public class Death : MonoBehaviour
 {
-    
-    public Vector3 startPoint; 
+    public Vector3 spawnPoint;
     public GameObject player;
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.tag == "Player")
         {
-           gameObject.transform.position = startPoint;
+            other.gameObject.GetComponent<Animator>().SetTrigger("fail");
+            other.transform.position = spawnPoint;
         }
     }
 }
