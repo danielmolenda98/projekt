@@ -1,21 +1,16 @@
 using UnityEngine;
 using System.Collections;
-using System;
 
 public class Death : MonoBehaviour
 {
     public Vector3 spawnPoint;
-    public float respawnTime = 3.0f;
+    public GameObject player;
 
-    void Start()
+    void OnCollisionEnter2D(Collision2D other)
     {
-        spawnPoint = gameObject.transform.position;
-        StartCoroutine(Respawn());
-    }
-
-    IEnumerator Respawn()
-    {
-        yield return new WaitForSeconds(respawnTime);
-        gameObject.transform.position = spawnPoint;
+        if (other.transform.tag == "Player")
+        {
+            other.transform.position = spawnPoint;
+        }
     }
 }
