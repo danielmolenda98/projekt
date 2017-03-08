@@ -9,7 +9,7 @@ public class Death : MonoBehaviour
     {
 		if (other.transform.tag == "Player")
         {
-			other.transform.position=spawnPoint;
+			other.transform.position = spawnPoint;
 		}
 	}
 }

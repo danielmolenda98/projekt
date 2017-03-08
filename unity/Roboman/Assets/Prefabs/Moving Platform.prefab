@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - component: {fileID: 403938}
   - component: {fileID: 6149380}
-  - component: {fileID: 11407730}
-  m_Layer: 9
+  - component: {fileID: 114016422547203862}
+  m_Layer: 0
   m_Name: Moving Platform
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.29, y: 0.25, z: 0}
+  m_LocalPosition: {x: 8.206455, y: 0.48569918, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000010641100056}
@@ -39,41 +39,12 @@ BoxCollider2D:
   m_GameObject: {fileID: 160754}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0cb77231a430b454fb792ff7ffcc3943, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 3, y: 0.7}
---- !u!114 &11407730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35168db6c6c44754d8afaa7c7c5cdc6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionMask:
-    serializedVersion: 2
-    m_Bits: 0
-  horizontalRayCount: 4
-  verticalRayCount: 4
-  horizontalRaySpacing: 0
-  verticalRaySpacing: 0
-  coll: {fileID: 0}
-  passengerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  localWaypoints:
-  - {x: -4.52, y: 0, z: 0}
-  - {x: 4.32, y: 0, z: 0}
-  speed: 4
-  cyclic: 0
-  waitTime: 1
-  easeAmount: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -203,6 +174,35 @@ Transform:
   m_Father: {fileID: 4000010641100056}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114016422547203862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a75c4b9c36cad94382565ca1d44ec3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  horizontalRayCount: 0
+  verticalRayCount: 0
+  horizontalRaySpacing: 0
+  verticalRaySpacing: 0
+  coll: {fileID: 0}
+  passengerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  localWaypoints:
+  - {x: 3, y: 0, z: 0}
+  - {x: -3, y: 0, z: 0}
+  speed: 1
+  cyclic: 0
+  waitTime: 1
+  easeAmount: 0
 --- !u!212 &212000012115404828
 SpriteRenderer:
   m_ObjectHideFlags: 1
