@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 [RequireComponent (typeof(AudioSource))]
 
-public class PlayVideo : MonoBehaviour {
-
+public class PlayVideo : MonoBehaviour
+{
     public MovieTexture movie;
     private AudioSource audio;
 
