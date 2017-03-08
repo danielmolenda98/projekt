@@ -14,7 +14,6 @@ public class Patrol : MonoBehaviour {
 		currentPoint = 0;
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
 		if(transform.position == patrolPoints[currentPoint].position)
