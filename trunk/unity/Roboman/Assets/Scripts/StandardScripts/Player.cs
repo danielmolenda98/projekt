@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private float accelerationTimeAirborne = .2f;
     private float accelerationTimeGrounded = .1f;
     private float moveSpeed = 6f;
+    public Transform startPoint;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;
@@ -138,5 +139,10 @@ public class Player : MonoBehaviour
         float targetVelocityX = directionalInput.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne));
         velocity.y += gravity * Time.deltaTime;
+    }
+
+    public void RestartHero()
+    {
+        gameObject.transform.position = startPoint.position;
     }
 }
