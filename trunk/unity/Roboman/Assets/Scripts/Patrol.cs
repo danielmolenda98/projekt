@@ -23,7 +23,7 @@ public class Patrol : MonoBehaviour {
 		}
 		if(currentPoint >= patrolPoints.Length)
 		{
-			currentPoint=0;
+			currentPoint = 0;
 		}
 		transform.position = Vector2.MoveTowards(transform.position,patrolPoints[currentPoint].position,moveSpeed=Time.deltaTime);
 	}
