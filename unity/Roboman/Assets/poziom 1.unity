@@ -3569,10 +3569,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 841478070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51a4bd54ac11794ab647e6db9ec6f1e, type: 3}
+  m_Script: {fileID: 11500000, guid: b26e0e66a44263e4f8695a5953866032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 14, y: 3, z: 0}
+  spawnPoint: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
 --- !u!68 &841478074
 EdgeCollider2D:

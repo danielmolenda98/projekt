@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/menu.unity
   - enabled: 1
     path: Assets/poziom 1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/menu lvl1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/poziom 2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/poziom 2 bonus.unity
   - enabled: 0
     path: Assets/zakonczenie.unity
