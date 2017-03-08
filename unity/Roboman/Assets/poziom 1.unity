@@ -943,7 +943,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294966271
-  startPoint: {fileID: 1464503232}
+  startPoint: {fileID: 1274114946}
 --- !u!50 &209967429
 Rigidbody2D:
   serializedVersion: 4
@@ -1835,7 +1835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1508725711}
   damping: 0.3
-  lookAheadFactor: 3
+  lookAheadFactor: 4
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
 --- !u!1 &434736705
@@ -3152,6 +3152,26 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+    - target: {fileID: 1000012815085126, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011216888360, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 160754, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013108122538, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011576107540, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc5187b30c5007f4f8f704d5972e7c47, type: 2}
   m_IsPrefabParent: 0
@@ -3552,7 +3572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51a4bd54ac11794ab647e6db9ec6f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 0, y: 0, z: 0}
+  spawnPoint: {x: 14, y: 3, z: 0}
   player: {fileID: 0}
 --- !u!68 &841478074
 EdgeCollider2D:
