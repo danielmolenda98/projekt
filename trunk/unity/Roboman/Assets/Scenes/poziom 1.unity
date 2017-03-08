@@ -714,7 +714,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 209967423}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fc89cc2f9e5768a438a67c64e39ef89a, type: 3}
@@ -788,6 +788,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &209967432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209967423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51a4bd54ac11794ab647e6db9ec6f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {x: 0, y: 0, z: 0}
+  respawnTime: 3
 --- !u!1 &252378845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,6 +3255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841478072}
   - component: {fileID: 841478071}
+  - component: {fileID: 841478074}
   m_Layer: 0
   m_Name: kolce v2
   m_TagString: Untagged
@@ -3297,6 +3311,20 @@ Transform:
   m_Father: {fileID: 2027186576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &841478074
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841478070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.060655594, y: -0.22240591}
+  serializedVersion: 2
+  m_Size: {x: 2.8713136, y: 0.79206085}
 --- !u!1 &858726327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4762,6 +4790,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1469352252}
   - component: {fileID: 1469352251}
+  - component: {fileID: 1469352253}
+  - component: {fileID: 1469352254}
   m_Layer: 0
   m_Name: 2 (3)
   m_TagString: Untagged
@@ -4817,6 +4847,30 @@ Transform:
   m_Father: {fileID: 2099278894}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469352253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469352250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51a4bd54ac11794ab647e6db9ec6f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {x: 0, y: 0, z: 0}
+  respawnTime: 3
+--- !u!114 &1469352254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469352250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1491836206
 GameObject:
   m_ObjectHideFlags: 0
