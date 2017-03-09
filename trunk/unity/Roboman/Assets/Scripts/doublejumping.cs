@@ -23,12 +23,12 @@ public class doublejumping : MonoBehaviour
         {
             if (isJumping == 2 )
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
                 isJumping = 1;
             }
             else if (isJumping == 1)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 300);
                 isJumping = 0;
             
             }
