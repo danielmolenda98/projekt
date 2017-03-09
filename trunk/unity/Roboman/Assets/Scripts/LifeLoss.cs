@@ -5,6 +5,7 @@ using UnityEngine;
 public class LifeLoss : MonoBehaviour
 {
     public uiManager uiObj;
+    public Vector2 spawnPoint;
 
     // Use this for initialization
     void Start()
@@ -17,6 +18,8 @@ public class LifeLoss : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             uiObj.lifesUpdate();
+            collision.transform.position = spawnPoint;
+            collision.gameObject.GetComponent<Animator>().SetTrigger("fail");
         }
     }
 }
