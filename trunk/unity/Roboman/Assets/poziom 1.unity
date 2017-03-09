@@ -2237,6 +2237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f19540ea99e40e418a2f4ec7d4187bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 0
 --- !u!114 &209967436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2778,7 +2779,7 @@ GameObject:
   - component: {fileID: 264793465}
   - component: {fileID: 264793464}
   m_Layer: 5
-  m_Name: pointText
+  m_Name: pointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,8 +2839,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 880, y: 434}
-  m_SizeDelta: {x: 433, y: 137}
+  m_AnchoredPosition: {x: 908, y: 434}
+  m_SizeDelta: {x: 490, y: 137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &305564604
 GameObject:
@@ -3241,7 +3242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb47ab628700914fa36bbd1bce17a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointText: {fileID: 264793464}
+  pointsText: {fileID: 264793464}
+  lifeCPU: {fileID: 995675645}
+  lifeCPU1: {fileID: 396640624}
+  lifeCPU2: {fileID: 964558827}
 --- !u!4 &361184793
 Transform:
   m_ObjectHideFlags: 0
@@ -4004,6 +4008,7 @@ GameObject:
   - component: {fileID: 413965738}
   - component: {fileID: 413965741}
   - component: {fileID: 413965740}
+  - component: {fileID: 413965742}
   - component: {fileID: 413965739}
   m_Layer: 0
   m_Name: kolce v2 (3)
@@ -4033,14 +4038,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 413965737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
+  uiObj: {fileID: 361184792}
 --- !u!68 &413965740
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -4050,12 +4051,12 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -1.375, y: 0}
-  - {x: 1.375, y: 0}
+  - {x: -1.3316193, y: 0.15182209}
+  - {x: 3.8258362, y: 0.15182209}
 --- !u!212 &413965741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4091,6 +4092,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &413965742
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413965737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 1.2796478, y: -0.5639107}
+  serializedVersion: 2
+  m_Size: {x: 5.309283, y: 1.3221786}
 --- !u!1 &427610166
 GameObject:
   m_ObjectHideFlags: 0
@@ -7566,8 +7581,9 @@ GameObject:
   m_Component:
   - component: {fileID: 841478072}
   - component: {fileID: 841478071}
-  - component: {fileID: 841478074}
+  - component: {fileID: 841478075}
   - component: {fileID: 841478073}
+  - component: {fileID: 841478074}
   m_Layer: 0
   m_Name: kolce v2
   m_TagString: Untagged
@@ -7623,24 +7639,8 @@ Transform:
   m_Father: {fileID: 2027186576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &841478073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 841478070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
---- !u!68 &841478074
-EdgeCollider2D:
+--- !u!61 &841478073
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -7650,10 +7650,35 @@ EdgeCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: -1.375, y: 0}
-  - {x: 1.375, y: 0}
+  m_Offset: {x: 0.016113281, y: -0.54788256}
+  serializedVersion: 2
+  m_Size: {x: 2.9111404, y: 1.3542328}
+--- !u!61 &841478074
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841478070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.016113281, y: 0.18321991}
+  serializedVersion: 2
+  m_Size: {x: 2.9111404, y: 0.03366883}
+--- !u!114 &841478075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841478070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiObj: {fileID: 361184792}
 --- !u!1 &847069897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11163,6 +11188,7 @@ GameObject:
   - component: {fileID: 1447898221}
   - component: {fileID: 1447898224}
   - component: {fileID: 1447898223}
+  - component: {fileID: 1447898225}
   - component: {fileID: 1447898222}
   m_Layer: 0
   m_Name: kolce v2 (2)
@@ -11192,14 +11218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447898220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
+  uiObj: {fileID: 361184792}
 --- !u!68 &1447898223
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -11209,12 +11231,12 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
-  - {x: -1.375, y: 0}
-  - {x: 1.375, y: 0}
+  - {x: -1.4617538, y: 0}
+  - {x: 1.4183807, y: 0}
 --- !u!212 &1447898224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11250,6 +11272,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1447898225
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447898220}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.016418457, y: -0.656327}
+  serializedVersion: 2
+  m_Size: {x: 2.84608, y: 1.1373439}
 --- !u!1 &1449820278
 GameObject:
   m_ObjectHideFlags: 0
@@ -14328,6 +14364,7 @@ GameObject:
   - component: {fileID: 1796749728}
   - component: {fileID: 1796749727}
   - component: {fileID: 1796749726}
+  - component: {fileID: 1796749729}
   m_Layer: 0
   m_Name: kolce v2 (4)
   m_TagString: Untagged
@@ -14414,6 +14451,18 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1796749729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796749724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiObj: {fileID: 361184792}
 --- !u!1001 &1801930030
 Prefab:
   m_ObjectHideFlags: 0
@@ -16975,6 +17024,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2076882730}
   - component: {fileID: 2076882729}
+  - component: {fileID: 2076882732}
+  - component: {fileID: 2076882731}
+  - component: {fileID: 2076882733}
   m_Layer: 0
   m_Name: kolce v2 (1)
   m_TagString: Untagged
@@ -17030,6 +17082,46 @@ Transform:
   m_Father: {fileID: 655642118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2076882731
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076882728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 2.0374565, y: 0.18321991}
+  serializedVersion: 2
+  m_Size: {x: 6.9538193, y: 0.033668816}
+--- !u!61 &2076882732
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076882728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 2.015564, y: -0.54788256}
+  serializedVersion: 2
+  m_Size: {x: 6.9100337, y: 1.3542328}
+--- !u!114 &2076882733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076882728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiObj: {fileID: 361184792}
 --- !u!1 &2083732448
 GameObject:
   m_ObjectHideFlags: 0
@@ -17039,6 +17131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083732449}
   - component: {fileID: 2083732452}
+  - component: {fileID: 2083732453}
   - component: {fileID: 2083732451}
   - component: {fileID: 2083732450}
   m_Layer: 0
@@ -17069,16 +17162,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2083732448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
+  m_Script: {fileID: 11500000, guid: a934fcf90d670734cabdc91cc26100f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
---- !u!68 &2083732451
-EdgeCollider2D:
+  uiObj: {fileID: 361184792}
+--- !u!61 &2083732451
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -17086,12 +17175,11 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: -1.375, y: 0}
-  - {x: 1.375, y: 0}
+  m_Offset: {x: 2.0374565, y: 0.18321991}
+  serializedVersion: 2
+  m_Size: {x: 6.9538193, y: 0.033668816}
 --- !u!212 &2083732452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17127,6 +17215,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2083732453
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083732448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.023410797, y: -0.54788256}
+  serializedVersion: 2
+  m_Size: {x: 2.925743, y: 1.3542328}
 --- !u!1 &2083920702
 GameObject:
   m_ObjectHideFlags: 0
