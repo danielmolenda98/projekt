@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class doublejumping : MonoBehaviour
 {
-
+    public float jumpHeight;
     private int isJumping = 2;
-    //private bool isJumping2 = false;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,19 +22,15 @@ public class doublejumping : MonoBehaviour
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 300);
                 isJumping = 0;
-            
             }
-
         }
     }
-
-    //this bit is to check if the object that collided with it has the ground tag
+   
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Ground")
         {
             isJumping = 2;
-            //isJumping2 = false;
         }
     }
 }
