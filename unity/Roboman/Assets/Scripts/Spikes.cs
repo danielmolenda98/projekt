@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
-    public Transform startPoint;
+    public Transform spawnPoint;
     void OnTriggerEnter2D (Collider2D other)
     {
 		if (other.gameObject.name == "Player")
         {
-            
+            other.transform.position = spawnPoint.position;
         }
 	}
 }

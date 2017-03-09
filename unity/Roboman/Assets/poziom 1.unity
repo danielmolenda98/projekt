@@ -978,9 +978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lifes: 3
+  cur_lives: 3
   spawnPoint: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
   lifeCPU: {fileID: 995675645}
   lifeCPU1: {fileID: 396640624}
   lifeCPU2: {fileID: 964558827}
@@ -3521,9 +3520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lifes: 3
+  cur_lives: 3
   spawnPoint: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
   lifeCPU: {fileID: 995675645}
   lifeCPU1: {fileID: 396640624}
   lifeCPU2: {fileID: 964558827}

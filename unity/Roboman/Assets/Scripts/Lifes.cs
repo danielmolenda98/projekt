@@ -7,7 +7,6 @@ public class Lifes : MonoBehaviour
     public int cur_lives = 3; //current lives
 
     public Vector3 spawnPoint;
-    public GameObject player;
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
     public RawImage lifeCPU2;
@@ -51,8 +50,9 @@ public class Lifes : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             cur_lives--;
-            other.gameObject.GetComponent<Animator>().SetTrigger("fail");
             other.transform.position = spawnPoint;
+            other.gameObject.GetComponent<Animator>().SetTrigger("fail");
+            
         }
     }
 }
