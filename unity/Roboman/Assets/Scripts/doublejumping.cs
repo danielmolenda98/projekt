@@ -5,7 +5,6 @@ using UnityEngine;
 public class doublejumping : MonoBehaviour
 {
 
-    public float jumpHeight;
     private int isJumping = 2;
     //private bool isJumping2 = false;
 
