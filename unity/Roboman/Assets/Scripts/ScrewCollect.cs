@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScrewCollect : MonoBehaviour {
-
+public class ScrewCollect : MonoBehaviour
+{ 
     public uiManager uiObj;
 
 	// Use this for initialization
@@ -16,7 +16,7 @@ public class ScrewCollect : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Player")
         {
-            uiObj.pointUpdate();
+            uiObj.pointsUpdate();
             Destroy(gameObject);
         }
     }
