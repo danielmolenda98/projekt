@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 209967424}
   - component: {fileID: 209967426}
   - component: {fileID: 209967433}
+  - component: {fileID: 209967434}
   m_Layer: 9
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -983,6 +984,17 @@ MonoBehaviour:
   lifeCPU: {fileID: 995675645}
   lifeCPU1: {fileID: 396640624}
   lifeCPU2: {fileID: 964558827}
+--- !u!114 &209967434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209967423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d3050c1be36c34a9da84c200430a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252378845
 GameObject:
   m_ObjectHideFlags: 0
