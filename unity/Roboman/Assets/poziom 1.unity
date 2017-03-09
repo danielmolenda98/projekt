@@ -722,6 +722,8 @@ GameObject:
   - component: {fileID: 209967424}
   - component: {fileID: 209967426}
   - component: {fileID: 209967433}
+  - component: {fileID: 209967436}
+  - component: {fileID: 209967435}
   m_Layer: 9
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -870,7 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 5
-  m_JumpForce: 800
+  m_JumpForce: 0
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
@@ -983,6 +985,37 @@ MonoBehaviour:
   lifeCPU: {fileID: 995675645}
   lifeCPU1: {fileID: 396640624}
   lifeCPU2: {fileID: 964558827}
+--- !u!114 &209967435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209967423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f19540ea99e40e418a2f4ec7d4187bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpHeight: 2
+--- !u!114 &209967436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209967423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf5d4a3965910842a6463a48010176c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  horizontalRayCount: 0
+  verticalRayCount: 0
+  horizontalRaySpacing: 0
+  verticalRaySpacing: 0
+  coll: {fileID: 0}
 --- !u!1 &252378845
 GameObject:
   m_ObjectHideFlags: 0
