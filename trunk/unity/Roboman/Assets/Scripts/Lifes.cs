@@ -52,7 +52,6 @@ public class Lifes : MonoBehaviour
             cur_lives--;
             other.transform.position = spawnPoint;
             other.gameObject.GetComponent<Animator>().SetTrigger("fail");
-            
         }
     }
 }
