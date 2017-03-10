@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LifeLoss : MonoBehaviour
 {
+    
     public uiManager uiObj;
     public Vector2 spawnPoint;
 
@@ -21,7 +24,9 @@ public class LifeLoss : MonoBehaviour
             uiObj.lifesUpdate();
             
             collision.transform.position = spawnPoint;
-            
+
         }
     }
+
+    
 }
