@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class doublejumping : MonoBehaviour
 {
-<<<<<<< .mine
     public RigidbodyConstraints constraints;
     public bool freezePosition;
     private Rigidbody2D rigidbody;
-||||||| .r94
-=======
-
-    public RigidbodyConstraints constraints;
-    public bool freezePosition;
-    private Rigidbody2D rigidbody;
->>>>>>> .r98
     public float jumpHeight;
     private void Awake()
     {
