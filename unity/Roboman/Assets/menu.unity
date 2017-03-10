@@ -655,7 +655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Zagraj!
+  m_Text: Play
 --- !u!222 &1658531089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -968,7 +968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Wyj\u015Bcie"
+  m_Text: Exit
 --- !u!222 &1872946939
 CanvasRenderer:
   m_ObjectHideFlags: 0
