@@ -17,9 +17,11 @@ public class LifeLoss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             uiObj.lifesUpdate();
+            
             collision.transform.position = spawnPoint;
-            collision.gameObject.GetComponent<Animator>().SetTrigger("fail");
+            
         }
     }
 }

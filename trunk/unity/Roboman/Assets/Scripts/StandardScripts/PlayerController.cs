@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     bool dirToRight = true;
     public float jumpForce;
     private Transform GroundCheck;
-    private bool grounded;
+    public bool grounded;
     [SerializeField] private bool airControl = false;
     [Range(0, 1)][SerializeField] private float crouchSpeed = .36f;
 

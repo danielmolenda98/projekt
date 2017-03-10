@@ -4042,6 +4042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!68 &413965740
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -6214,7 +6215,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 655642118}
-  - component: {fileID: 655642120}
   - component: {fileID: 655642119}
   m_Layer: 0
   m_Name: kolce 3x1
@@ -6254,22 +6254,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -4.278404, y: -0.7860186}
   - {x: 3.409649, y: -0.77222884}
---- !u!114 &655642120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 655642117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
 --- !u!1 &667066408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6622,7 +6606,8 @@ Prefab:
       propertyPath: m_Name
       value: pumpkin stay
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114993953334713422, guid: b5e49c862a4b24845b02b39ded8a05d3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b5e49c862a4b24845b02b39ded8a05d3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &691296506
@@ -7679,6 +7664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!1 &847069897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11222,6 +11208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!68 &1447898223
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -14363,7 +14350,6 @@ GameObject:
   - component: {fileID: 1796749725}
   - component: {fileID: 1796749728}
   - component: {fileID: 1796749727}
-  - component: {fileID: 1796749726}
   - component: {fileID: 1796749729}
   m_Layer: 0
   m_Name: kolce v2 (4)
@@ -14385,22 +14371,6 @@ Transform:
   m_Father: {fileID: 1083457548}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1796749726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796749724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 995675645}
-  lifeCPU1: {fileID: 396640624}
-  lifeCPU2: {fileID: 964558827}
 --- !u!68 &1796749727
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -14463,6 +14433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!1001 &1801930030
 Prefab:
   m_ObjectHideFlags: 0
@@ -17122,6 +17093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!1 &2083732448
 GameObject:
   m_ObjectHideFlags: 0
@@ -17166,6 +17138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &2083732451
 BoxCollider2D:
   m_ObjectHideFlags: 0
