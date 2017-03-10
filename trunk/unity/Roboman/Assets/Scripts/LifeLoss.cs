@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class LifeLoss : MonoBehaviour
 {
-    
+
     public uiManager uiObj;
     public Vector2 spawnPoint;
 
+   
     // Use this for initialization
     void Start()
     {
@@ -22,10 +23,9 @@ public class LifeLoss : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             uiObj.lifesUpdate();
+            
             //collision.transform.position = spawnPoint;
-
         }
     }
 
-    
 }

@@ -58,6 +58,11 @@ public class uiManager : MonoBehaviour
         }
     }
 
+    internal IEnumerator enemyDie()
+    {
+        throw new NotImplementedException();
+    }
+
     public void pointsUpdate()
     {
         cur_points++;
