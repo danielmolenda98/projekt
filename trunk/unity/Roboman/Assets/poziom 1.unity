@@ -11877,7 +11877,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1488192085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 244.6, y: 24.89, z: 0}
+  m_LocalPosition: {x: 246.1, y: 24.89, z: 0}
   m_LocalScale: {x: 1.000032, y: 1.0000055, z: 1.0000074}
   m_Children: []
   m_Father: {fileID: 935175903}
@@ -17092,7 +17092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 361184792}
-  spawnPoint: {x: 0, y: 0}
+  spawnPoint: {x: 42.01, y: 7.01}
 --- !u!1 &2083732448
 GameObject:
   m_ObjectHideFlags: 0
