@@ -22,9 +22,18 @@ public class LifeLoss : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             uiObj.lifesUpdate();
+<<<<<<< .mine
+            //collision.transform.position = spawnPoint;
+
+||||||| .r94
+            
+            collision.transform.position = spawnPoint;
+            
+=======
             
             collision.transform.position = spawnPoint;
 
+>>>>>>> .r98
         }
     }
 
