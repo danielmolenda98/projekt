@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,8 @@ using UnityEngine.UI;
 public class uiManager : MonoBehaviour
 {
     public Text pointsText;
+
+  
 
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
