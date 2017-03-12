@@ -10,6 +10,7 @@ TagManager:
   - spikes
   - Pumpkin
   - Collider
+  - ColliderPumpkin
   layers:
   - Default
   - TransparentFX
