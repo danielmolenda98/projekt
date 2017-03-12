@@ -5,30 +5,28 @@ using UnityEngine;
 
 public class DeadPumpkinWalk : MonoBehaviour
 {
-    public GameObject gameObject1;
-   // public uiManager uiObj;
-    //public float respawnTime = 0.5f;
-
-   // void Start()
-   // {
-   //     uiObj = GameObject.FindObjectOfType(typeof(uiManager)) as uiManager;
-   // }
+    public GameObject gameObject;
+    public float respawnTime = 0.5f;
+    public Vector2 spawnPoint;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject)
         {
-            collision.gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
-            //StartCoroutine(enemy());
-
+            gameObject.GetComponent<Animator>().SetTrigger("deadPumpkin");
+            StartCoroutine(enemy1());
         }
     }
 
-   /* public IEnumerator enemy()
+    public IEnumerator enemy1()
     {
         yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(respawnTime);
-        Destroy(gameObject1);
+        Destroy(gameObject);
+        gameObject.transform.position = spawnPoint;
 
-    }*/
+
+    }
+
+
 }
