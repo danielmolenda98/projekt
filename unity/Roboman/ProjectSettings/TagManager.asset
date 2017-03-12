@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - spikes
   - Pumpkin
+  - Collider
   layers:
   - Default
   - TransparentFX
