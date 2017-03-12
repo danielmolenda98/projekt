@@ -8,8 +8,6 @@ public class uiManager : MonoBehaviour
 {
     public Text pointsText;
 
-
-
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
     public RawImage lifeCPU2;
@@ -26,7 +24,7 @@ public class uiManager : MonoBehaviour
 
     // Update is called once per frame
     public void Update()
-    {
+    {     
         pointsText.text = "Points: " + cur_points;
 
         if (cur_lifes == 3)
@@ -67,10 +65,5 @@ public class uiManager : MonoBehaviour
     {
         if (cur_lifes > 0)
             cur_lifes--;
-    }
-
-    public void enemy()
-    {
-            
     }
 }
