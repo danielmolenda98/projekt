@@ -21,11 +21,12 @@ GameObject:
   - component: {fileID: 4855382077130622}
   - component: {fileID: 212096753662584084}
   - component: {fileID: 95034752377490232}
-  - component: {fileID: 61224551887879008}
-  - component: {fileID: 114993953334713422}
+  - component: {fileID: 61823377078724406}
+  - component: {fileID: 61744844400400694}
+  - component: {fileID: 114969864992561354}
   m_Layer: 0
   m_Name: pumpkin stay
-  m_TagString: Untagged
+  m_TagString: Pumpkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,14 +37,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830394521827870}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.54, y: 4.59, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -38.206, y: -4.2299995, z: 0}
   m_LocalScale: {x: 0.20703742, y: 0.20703745, z: 0.20703745}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61224551887879008
+--- !u!61 &61744844400400694
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -54,9 +55,23 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.2293748, y: -1.1990561}
+  m_Offset: {x: -0.47920153, y: -1.4628905}
   serializedVersion: 2
-  m_Size: {x: 4.538782, y: 5.231883}
+  m_Size: {x: 3.318231, y: 4.7042274}
+--- !u!61 &61823377078724406
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1830394521827870}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.21913041, y: 2.1988533}
+  serializedVersion: 2
+  m_Size: {x: 4.114977, y: 2.3454485}
 --- !u!95 &95034752377490232
 Animator:
   serializedVersion: 3
@@ -74,7 +89,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114993953334713422
+--- !u!114 &114969864992561354
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -82,14 +97,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830394521827870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cfe5ebd3601014cb0905d58c72e5b9, type: 3}
+  m_Script: {fileID: 11500000, guid: e744db87499be584ea32b906a581f3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cur_lives: 3
-  spawnPoint: {x: 0, y: 0, z: 0}
-  lifeCPU: {fileID: 0}
-  lifeCPU1: {fileID: 0}
-  lifeCPU2: {fileID: 0}
+  gameObject1: {fileID: 1830394521827870}
+  respawnTime: 0.5
 --- !u!212 &212096753662584084
 SpriteRenderer:
   m_ObjectHideFlags: 1
