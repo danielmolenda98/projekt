@@ -8,6 +8,7 @@ TagManager:
   - Through
   - Ground
   - spikes
+  - Pumpkin
   layers:
   - Default
   - TransparentFX

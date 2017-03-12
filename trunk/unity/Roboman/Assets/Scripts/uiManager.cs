@@ -8,7 +8,7 @@ public class uiManager : MonoBehaviour
 {
     public Text pointsText;
 
-  
+
 
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
@@ -58,11 +58,6 @@ public class uiManager : MonoBehaviour
         }
     }
 
-    internal IEnumerator enemyDie()
-    {
-        throw new NotImplementedException();
-    }
-
     public void pointsUpdate()
     {
         cur_points++;
@@ -70,7 +65,12 @@ public class uiManager : MonoBehaviour
 
     public void lifesUpdate()
     {
-        if(cur_lifes > 0)
+        if (cur_lifes > 0)
             cur_lifes--;
+    }
+
+    public void enemy()
+    {
+            
     }
 }
