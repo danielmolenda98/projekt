@@ -31,7 +31,7 @@ public class uiManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {     
-        pointsText.text = "Points: " + cur_points;
+        pointsText.text = "" + cur_points;
 
         if (cur_lifes == 3)
         {
