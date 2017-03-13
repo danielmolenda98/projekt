@@ -13,7 +13,7 @@ public class Respawn : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "spikes" || collision.gameObject.tag == "ColliderPumpkin")
+        if (collision.gameObject.tag == "spikes")
         {
             StartCoroutine(PlayerDie());
         }
