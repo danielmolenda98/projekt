@@ -11,6 +11,9 @@ public class uiManager : MonoBehaviour
 
     public int nextlvl;
     public float time = 2f;
+    int cur_points; // current points
+    int cur_lifes; // current lifes
+
 
     public GameObject panelGameOver;
 
@@ -18,8 +21,6 @@ public class uiManager : MonoBehaviour
     public RawImage lifeCPU1;
     public RawImage lifeCPU2;
 
-    int cur_points;
-    int cur_lifes;
 
     // Use this for initialization
     void Start()
@@ -75,4 +76,11 @@ public class uiManager : MonoBehaviour
         if (cur_lifes > 0)
             cur_lifes--;
     }
+    //public IEnumerator enemyDie()
+    //{
+    //    yield return new WaitForSeconds(1f);
+    //    yield return new WaitForSeconds(respawnTime);
+    //    gameObject.transform.position = spawnPoint;
+    //}
+
 }

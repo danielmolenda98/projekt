@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ParallaxScrolling : MonoBehaviour
 {
-    public Transform cameraTransform; //bieżąca pozycja
+    public Transform cameraTransform; //current position
     public float parallaxFactor; //współczynnik paralaksy
 
-    private Vector3 prevCameraPosition; // poprzednia pozycja kamery
-    private Vector3 deltaCameraPosition; // różnica między poprzednią, a bierzącą pozycją kamery
+    private Vector3 prevCameraPosition; // previous camera position
+    private Vector3 deltaCameraPosition; // the difference between the previous and the current camera position
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         prevCameraPosition = cameraTransform.position;	
 	}
