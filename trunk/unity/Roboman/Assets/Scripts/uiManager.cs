@@ -57,14 +57,8 @@ public class uiManager : MonoBehaviour
         if (cur_lifes == 0)
         {
             panelGameOver.SetActive(true);
-            StartCoroutine(next());
+            Time.timeScale = 0;
         }
-    }
-    public IEnumerator next()
-    {
-        yield return new WaitForSeconds(1f);
-        yield return new WaitForSeconds(time);
-        SceneManager.LoadScene(nextlvl);
     }
 
     public void pointsUpdate()
