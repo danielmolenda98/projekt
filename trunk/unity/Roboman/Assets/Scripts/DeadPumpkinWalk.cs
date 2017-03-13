@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class DeadPumpkinWalk : MonoBehaviour
 {
-    public GameObject gameObject;
     public float respawnTime = 0.5f;
-    public Vector2 spawnPoint;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,10 +21,5 @@ public class DeadPumpkinWalk : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(respawnTime);
         Destroy(gameObject);
-        gameObject.transform.position = spawnPoint;
-
-
     }
-
-
 }

@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class LifeLoss : MonoBehaviour
 {
-
     public uiManager uiObj;
     public Vector2 spawnPoint;
-
    
     // Use this for initialization
     void Start()
