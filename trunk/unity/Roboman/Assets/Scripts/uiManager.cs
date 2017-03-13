@@ -2,11 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class uiManager : MonoBehaviour
 {
     public Text pointsText;
+
+    public int nextlvl;
+    public float time = 2f;
+
+    public GameObject panelGameOver;
 
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
@@ -50,10 +56,15 @@ public class uiManager : MonoBehaviour
 
         if (cur_lifes == 0)
         {
-            lifeCPU.enabled = false;
-            lifeCPU1.enabled = false;
-            lifeCPU2.enabled = false;
+            panelGameOver.SetActive(true);
+            StartCoroutine(next());
         }
+    }
+    public IEnumerator next()
+    {
+        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(nextlvl);
     }
 
     public void pointsUpdate()
