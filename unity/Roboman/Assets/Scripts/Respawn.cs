@@ -6,16 +6,20 @@ public class Respawn : MonoBehaviour
 {
     public Vector2 spawnPoint;
     public float respawnTime = 2f;
+    public void KillPlayer()
+    {
+        StartCoroutine(PlayerDie());
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "spikes" || collision.gameObject.tag == "ColliderPumpkin")
         {
-            StartCoroutine(enemyDie());
+            StartCoroutine(PlayerDie());
         }
     }
 
-    public IEnumerator enemyDie()
+    public IEnumerator PlayerDie()
     {
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
