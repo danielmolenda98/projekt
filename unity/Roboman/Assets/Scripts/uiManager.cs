@@ -76,11 +76,4 @@ public class uiManager : MonoBehaviour
         if (cur_lifes > 0)
             cur_lifes--;
     }
-    //public IEnumerator enemyDie()
-    //{
-    //    yield return new WaitForSeconds(1f);
-    //    yield return new WaitForSeconds(respawnTime);
-    //    gameObject.transform.position = spawnPoint;
-    //}
-
 }

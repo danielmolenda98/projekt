@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Patrol : MonoBehaviour {
-
+public class Patrol : MonoBehaviour
+{
 	public Vector3[] patrolPoints;
 	public float moveSpeed;
 	private int currentPoint;

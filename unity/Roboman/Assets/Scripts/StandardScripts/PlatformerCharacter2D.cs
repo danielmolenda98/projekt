@@ -21,11 +21,6 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
         
-        void RestartHero()
-        {
-
-        }
-
         private void Awake()
         {
             // Setting up references.
@@ -34,7 +29,6 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
-
 
         private void FixedUpdate()
         {
@@ -54,7 +48,6 @@ namespace UnityStandardAssets._2D
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
 
-
         public void Move(float move, bool crouch, bool jump)
         {
             // If crouching, check to see if the character can stand up
@@ -66,14 +59,11 @@ namespace UnityStandardAssets._2D
                     crouch = true;
                 }
             }
-
-           
+  
             m_Anim.SetBool("Crouch", crouch);
-
             
             if (m_Grounded || m_AirControl)
-            {
-                
+            {                
                 move = (crouch ? move*m_CrouchSpeed : move);                             
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));                              
                 m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
@@ -87,6 +77,7 @@ namespace UnityStandardAssets._2D
                     Flip();
                 }
             }
+
             // If the player should jump...
             if (m_Grounded && jump && m_Anim.GetBool("Ground"))
             {
@@ -96,7 +87,6 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
         }
-
 
         private void Flip()
         {
