@@ -59,6 +59,10 @@ public class uiManager : MonoBehaviour
     public void pointsUpdate()
     {
         cur_points++;
+        if (cur_points == 100)
+        {
+            cur_lifes++;
+        }
     }
 
     public void lifesUpdate()
