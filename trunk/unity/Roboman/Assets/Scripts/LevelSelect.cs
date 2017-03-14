@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelect : MonoBehaviour
 {
-	public void LvlSelect(int level)
+    public void LvlSelect(int level)
     {
 		SceneManager.LoadScene(level);
 	}

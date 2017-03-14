@@ -6681,6 +6681,11 @@ Prefab:
       propertyPath: time
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 114690526974866362, guid: b699e8ea535709e4da93b6acc4e784fb,
+        type: 2}
+      propertyPath: panelgameover
+      value: 
+      objectReference: {fileID: 46358669}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b699e8ea535709e4da93b6acc4e784fb, type: 2}
   m_IsPrefabParent: 0
@@ -8788,7 +8793,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1534418319084664, guid: 75518add61f61e3419c602db521fe22c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224398873095456348, guid: 75518add61f61e3419c602db521fe22c,
         type: 2}
