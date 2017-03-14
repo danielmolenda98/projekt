@@ -58,7 +58,7 @@ public class uiManager : MonoBehaviour
         if (cur_lifes == 0)
         {
             panelGameOver.SetActive(true);
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
 
