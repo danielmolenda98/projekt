@@ -5,13 +5,13 @@ using UnityEngine;
 public class CrystalsRotation : MonoBehaviour
 {
     public float speed = 2f;
-    private Renderer rend;
+    //private Renderer rend;
 
-    private void Awake()
+   /* private void Awake()
     {
         rend = GetComponent<Renderer>();
         rend.sortingOrder = -10;  
-    }
+    }*/
 	// Update is called once per frame
 	void Update ()
     {
