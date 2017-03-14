@@ -8,14 +8,12 @@ using UnityEngine.UI;
 public class uiManager : MonoBehaviour
 {
     public Text pointsText;
+    public GameObject panelgameover;
 
     public int nextlvl;
     public float time = 2f;
     int cur_points; // current points
-    int cur_lifes; // current lifes
-
-
-    public GameObject panelGameOver;
+    int cur_lifes; // current lifesW
 
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
@@ -25,6 +23,7 @@ public class uiManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1;
         cur_points = 0;
         cur_lifes = 3;
     }
@@ -57,8 +56,16 @@ public class uiManager : MonoBehaviour
 
         if (cur_lifes == 0)
         {
-            panelGameOver.SetActive(true);
+            lifeCPU.enabled = false;
+            lifeCPU1.enabled = false;
+            lifeCPU2.enabled = false;
+
+            panelgameover.SetActive(true);
+            Time.timeScale = 0;
+
+            //panelGameOver.SetActive(true);
             //Time.timeScale = 0;
+
         }
     }
 
@@ -75,5 +82,12 @@ public class uiManager : MonoBehaviour
     {
         if (cur_lifes > 0)
             cur_lifes--;
+    }
+
+    public void gameover()
+    {
+        if (cur_lifes == 0)
+            Time.timeScale = 0;
+            panelgameover.SetActive(true);
     }
 }

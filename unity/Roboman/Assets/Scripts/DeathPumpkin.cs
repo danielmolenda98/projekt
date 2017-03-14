@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DeathPumpkin : MonoBehaviour
 {
-    public GameObject gameObject;
     public float respawnTime = 0.5f;
     public Vector2 spawnPoint;
 
