@@ -8,7 +8,7 @@ AnimatorController:
   m_Name: Walk (5)
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: deadPumpkin
+  - m_Name: deathPumpkin
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

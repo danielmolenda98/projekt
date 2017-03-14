@@ -4158,6 +4158,68 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &149528342
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 200.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00051269
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.4206817
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4206789
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.4206789
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6122c155ad7826b46949b0e9d5d808ba, type: 2}
+    - target: {fileID: 100000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+      propertyPath: m_Name
+      value: Cristal (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &149720992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7524,8 +7586,8 @@ GameObject:
   - component: {fileID: 267528273}
   - component: {fileID: 267528272}
   - component: {fileID: 267528271}
-  - component: {fileID: 267528270}
   - component: {fileID: 267528269}
+  - component: {fileID: 267528270}
   m_Layer: 0
   m_Name: pumpkin
   m_TagString: Pumpkin
@@ -7566,16 +7628,17 @@ MonoBehaviour:
 --- !u!114 &267528270
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267528267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &267528271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13127,7 +13190,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 022f7820a31828446b1a8048db6b128b, type: 2}
+      objectReference: {fileID: 2100000, guid: db76e96f23d65fc4ebe194100d0d7bb5, type: 2}
     - target: {fileID: 100000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
       propertyPath: m_Name
       value: Cristal
@@ -14595,8 +14658,8 @@ GameObject:
   - component: {fileID: 527965995}
   - component: {fileID: 527965994}
   - component: {fileID: 527965993}
-  - component: {fileID: 527965992}
   - component: {fileID: 527965991}
+  - component: {fileID: 527965992}
   m_Layer: 0
   m_Name: pumpkin (6)
   m_TagString: Pumpkin
@@ -14637,16 +14700,17 @@ MonoBehaviour:
 --- !u!114 &527965992
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527965989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &527965993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16207,8 +16271,8 @@ GameObject:
   - component: {fileID: 585166756}
   - component: {fileID: 585166755}
   - component: {fileID: 585166754}
-  - component: {fileID: 585166753}
   - component: {fileID: 585166752}
+  - component: {fileID: 585166753}
   m_Layer: 0
   m_Name: pumpkin (7)
   m_TagString: Pumpkin
@@ -16249,16 +16313,17 @@ MonoBehaviour:
 --- !u!114 &585166753
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114488073889527720, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 585166750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &585166754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25042,8 +25107,8 @@ GameObject:
   - component: {fileID: 957519208}
   - component: {fileID: 957519207}
   - component: {fileID: 957519206}
-  - component: {fileID: 957519205}
   - component: {fileID: 957519204}
+  - component: {fileID: 957519205}
   m_Layer: 0
   m_Name: pumpkin (5)
   m_TagString: Pumpkin
@@ -25084,16 +25149,17 @@ MonoBehaviour:
 --- !u!114 &957519205
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957519202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &957519206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25191,8 +25257,8 @@ GameObject:
   - component: {fileID: 960357956}
   - component: {fileID: 960357955}
   - component: {fileID: 960357954}
-  - component: {fileID: 960357953}
   - component: {fileID: 960357952}
+  - component: {fileID: 960357953}
   m_Layer: 0
   m_Name: pumpkin (2)
   m_TagString: Pumpkin
@@ -25233,16 +25299,17 @@ MonoBehaviour:
 --- !u!114 &960357953
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960357950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &960357954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29393,8 +29460,8 @@ GameObject:
   - component: {fileID: 1130026784}
   - component: {fileID: 1130026783}
   - component: {fileID: 1130026782}
-  - component: {fileID: 1130026781}
   - component: {fileID: 1130026780}
+  - component: {fileID: 1130026781}
   m_Layer: 0
   m_Name: pumpkin (4)
   m_TagString: Pumpkin
@@ -29435,16 +29502,17 @@ MonoBehaviour:
 --- !u!114 &1130026781
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130026778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &1130026782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41948,8 +42016,8 @@ GameObject:
   - component: {fileID: 1726172406}
   - component: {fileID: 1726172405}
   - component: {fileID: 1726172404}
-  - component: {fileID: 1726172403}
   - component: {fileID: 1726172402}
+  - component: {fileID: 1726172403}
   m_Layer: 0
   m_Name: pumpkin (3)
   m_TagString: Pumpkin
@@ -41990,16 +42058,17 @@ MonoBehaviour:
 --- !u!114 &1726172403
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114495135979717086, guid: 718851737f84e40479b93434d0df9d50,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726172400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a00478b9160e24d936c0aa1af19674, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d4c276dfbb36e4d9b86946035f9fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnTime: 0.6
+  uiObj: {fileID: 0}
+  respawnTime: 0.5
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &1726172404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43614,6 +43683,36 @@ Transform:
   m_Father: {fileID: 87321329}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1809656409 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 41ca845124363dd41a99fc80950cc922, type: 3}
+  m_PrefabInternal: {fileID: 149528342}
+--- !u!114 &1809656410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809656409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22100181b900ce8468f60ebb8dec9a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+--- !u!61 &1809656411
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809656409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.00002021715, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.1757693, y: 0.2893429}
 --- !u!1 &1811499852
 GameObject:
   m_ObjectHideFlags: 0
