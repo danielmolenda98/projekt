@@ -6,33 +6,23 @@ public class spring : MonoBehaviour
 {
     public RigidbodyConstraints constraints;
     public bool freezePosition;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rgdBody;
     public float jumpHeight;
+    public LayerMask mask;
+    private Rigidbody rb;
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rgdBody = GetComponent<Rigidbody2D>();
     }
-    public LayerMask mask;
-
-    private Rigidbody rb;
-
-    void Update()
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-       
-            if (collision.GameObjectTag == "Player")
-            {
-                
-                rigidbody.AddForce(Vector2.up * 1200);
-
-                if (GameObjectTag.JumpHeight = 1200)
-                {
-                    rigidbody.velocity = Vector3.zero;
-
-
-                }
-            }
-
-    }
-
+        if(collision.gameObject.tag == "spring")
+        {
+            rgdBody.AddForce(Vector2.up * 1240);
+            if (jumpHeight == 1240);
+                rgdBody.velocity = Vector3.zero;
+        }
+     }
 }
