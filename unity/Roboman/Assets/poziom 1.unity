@@ -42706,6 +42706,7 @@ GameObject:
   - component: {fileID: 1743427997}
   - component: {fileID: 1743427998}
   - component: {fileID: 1743427999}
+  - component: {fileID: 1743428000}
   m_Layer: 0
   m_Name: spring (17)
   m_TagString: Untagged
@@ -42769,12 +42770,28 @@ BoxCollider2D:
   m_GameObject: {fileID: 1743427996}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8be6341e1ce3f4cec9902bc34f72d20a, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0.7995482, y: 0.110707074}
   serializedVersion: 2
   m_Size: {x: 0.66786295, y: 0.2489612}
+--- !u!68 &1743428000
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743427996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: -1.5308528, y: 6.0796623}
+  - {x: 0.5936885, y: 6.1058292}
+  - {x: 2.7864652, y: 6.1301556}
 --- !u!1 &1745126407
 GameObject:
   m_ObjectHideFlags: 0
