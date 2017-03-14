@@ -20,8 +20,8 @@ public class spring : MonoBehaviour
     {
         if(collision.gameObject.tag == "spring")
         {
-            rgdBody.AddForce(Vector2.up * 1240);
-            if (jumpHeight == 1240);
+            rgdBody.AddForce(Vector2.up * 1350);
+            if (jumpHeight == 1350);
                 rgdBody.velocity = Vector3.zero;
         }
      }
