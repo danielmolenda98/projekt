@@ -62,10 +62,6 @@ public class uiManager : MonoBehaviour
 
             panelgameover.SetActive(true);
             Time.timeScale = 0;
-
-            //panelGameOver.SetActive(true);
-            //Time.timeScale = 0;
-
         }
     }
 
@@ -87,7 +83,9 @@ public class uiManager : MonoBehaviour
     public void gameover()
     {
         if (cur_lifes == 0)
+        {
             Time.timeScale = 0;
             panelgameover.SetActive(true);
+        }
     }
 }
