@@ -42026,6 +42026,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.1125001
       objectReference: {fileID: 0}
+    - target: {fileID: 212865651115662186, guid: 610577ab2ebfb4d459ad36f78034a1e7,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212556188225750486, guid: 610577ab2ebfb4d459ad36f78034a1e7,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114747055628823824, guid: 610577ab2ebfb4d459ad36f78034a1e7, type: 2}
     - {fileID: 114897981295780436, guid: 610577ab2ebfb4d459ad36f78034a1e7, type: 2}

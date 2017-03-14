@@ -11,6 +11,7 @@ TagManager:
   - Pumpkin
   - Collider
   - ColliderPumpkin
+  - spring
   layers:
   - Default
   - TransparentFX
