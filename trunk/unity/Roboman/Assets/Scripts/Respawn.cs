@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-   public Vector2 spawnPoint;
+   public Transform spawnPoint;
     public float respawnTime = 2f;
     public GameObject gmObj;
     public uiManager uiObj;
@@ -33,6 +33,6 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
-        gmObj.transform.position = spawnPoint;
+        gmObj.transform.position = spawnPoint.position;
     }
 }

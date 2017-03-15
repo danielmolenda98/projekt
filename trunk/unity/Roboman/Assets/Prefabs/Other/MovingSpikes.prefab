@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114008051421298142}
   - component: {fileID: 114552691635562656}
   m_Layer: 0
-  m_Name: movingSpikes
+  m_Name: MovingSpikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
-  spawnPoint: {x: 0, y: 0}
 --- !u!212 &212224840305740406
 SpriteRenderer:
   m_ObjectHideFlags: 1
