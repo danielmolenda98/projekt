@@ -12,6 +12,7 @@ TagManager:
   - Collider
   - ColliderPumpkin
   - spring
+  - cristal
   layers:
   - Default
   - TransparentFX
