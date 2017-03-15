@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public uiManager uiObj;
     public float respawnTime = 0.5f;
+    public uiManager uiObj;
 
     private void Start()
     {
