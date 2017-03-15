@@ -81,7 +81,7 @@ Material:
       second: 1
     - first:
         name: _CubemapEmessive
-      second: 1.35
+      second: 1.28
     - first:
         name: _Cutoff
       second: 0.5
