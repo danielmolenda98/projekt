@@ -12,8 +12,11 @@ public class LifeLoss : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
-        uiObj.lifesUpdate();
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
+            uiObj.lifesUpdate();
+            collision.gameObject.GetComponent<Respawn>().KillPlayer();
+        }
     }
-
 }

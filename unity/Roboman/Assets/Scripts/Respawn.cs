@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-   public Vector2 spawnPoint;
+    public Vector2 spawnPoint;
     public float respawnTime = 2f;
-    public GameObject gmObj;
     public uiManager uiObj;
 
     void Start()
@@ -25,7 +24,6 @@ public class Respawn : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             uiObj.lifesUpdate();
-            StartCoroutine(PlayerDie());
         }
     }
 
@@ -33,6 +31,6 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
-        gmObj.transform.position = spawnPoint;
+        gameObject.transform.position = spawnPoint;
     }
 }
