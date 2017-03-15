@@ -17,7 +17,6 @@ public class Enemy : MonoBehaviour
     {
         if (collision is CircleCollider2D)
         {
-            Debug.Log("Kolizja nogi");
             gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
             StartCoroutine(destroyEnemy()); 
             GetComponent<Collider2D>().enabled = false; 
@@ -25,7 +24,6 @@ public class Enemy : MonoBehaviour
 
         else if (collision is BoxCollider2D)
         {
-           Debug.Log("Kolizja ciała ");
            collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
            collision.gameObject.GetComponent<Respawn>().KillPlayer();
            uiObj.lifesUpdate();

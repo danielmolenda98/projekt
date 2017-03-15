@@ -14,7 +14,7 @@ public class uiManager : MonoBehaviour
     public int nextlvl;
     public float time = 2f;
     int cur_points; // current points
-    int cur_lifes; // current lifesW
+    int cur_lifes; // current lifes
     int cur_cristals;
 
     public RawImage lifeCPU;
@@ -35,7 +35,7 @@ public class uiManager : MonoBehaviour
     public void Update()
     {     
         pointsText.text = "" + cur_points;
-        cristalText.text = "P: " + cur_cristals + "/ 5";
+        cristalText.text = "" + cur_cristals + " / 5";
 
         if (cur_lifes == 3)
         {
