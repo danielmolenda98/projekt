@@ -5,7 +5,6 @@ using UnityEngine;
 public class Collect : MonoBehaviour
 { 
     public uiManager uiObj;
-    //public GameObject gmObj;
 
 	// Use this for initialization
 	void Start ()
@@ -15,16 +14,10 @@ public class Collect : MonoBehaviour
 	
     void OnTriggerEnter2D(Collider2D collision)
     {
-        /*
-        if(collision.gameObject.tag == "Player")
+
+        if (collision.gameObject.tag == "Player")
         {
             uiObj.pointsUpdate();
-            Destroy(gameObject);
-        }
-        */
-        if(collision.gameObject.tag == "Player")
-        {
-            uiObj.cristalsUpdate();
             Destroy(gameObject);
         }
     }
