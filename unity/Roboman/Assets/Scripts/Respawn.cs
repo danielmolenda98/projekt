@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    public Vector2 spawnPoint;
+   public Vector2 spawnPoint;
     public float respawnTime = 2f;
+    public GameObject gmObj;
+    public uiManager uiObj;
+
+    void Start()
+    {
+        uiObj = GameObject.FindObjectOfType(typeof(uiManager)) as uiManager;
+    }
+
     public void KillPlayer()
     {
         StartCoroutine(PlayerDie());
@@ -13,8 +21,10 @@ public class Respawn : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "spikes")
+        if (collision.gameObject.tag == "Player")
         {
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
+            uiObj.lifesUpdate();
             StartCoroutine(PlayerDie());
         }
     }
@@ -23,6 +33,6 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
-        gameObject.transform.position = spawnPoint;
+        gmObj.transform.position = spawnPoint;
     }
 }
