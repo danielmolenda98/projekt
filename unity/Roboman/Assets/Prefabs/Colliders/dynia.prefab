@@ -201,8 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 4363924207831656}
-  - {fileID: 4122822810740008}
+  - {x: -7.3175273e+25, y: 5.627e-40, z: 1.4919112e+29}
+  - {x: -7.3175273e+25, y: 5.627e-40, z: 1.4919112e+29}
   moveSpeed: 0
 --- !u!114 &114790224933210216
 MonoBehaviour:

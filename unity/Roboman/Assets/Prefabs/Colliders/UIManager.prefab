@@ -52,6 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsText: {fileID: 0}
+  cristalText: {fileID: 0}
+  panelgameover: {fileID: 0}
+  nextlvl: 0
+  time: 2
   lifeCPU: {fileID: 0}
   lifeCPU1: {fileID: 0}
   lifeCPU2: {fileID: 0}

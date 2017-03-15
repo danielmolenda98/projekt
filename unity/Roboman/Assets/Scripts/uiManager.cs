@@ -8,12 +8,14 @@ using UnityEngine.UI;
 public class uiManager : MonoBehaviour
 {
     public Text pointsText;
+    public Text cristalText;
     public GameObject panelgameover;
 
     public int nextlvl;
     public float time = 2f;
     int cur_points; // current points
     int cur_lifes; // current lifesW
+    int cur_cristals;
 
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
@@ -25,6 +27,7 @@ public class uiManager : MonoBehaviour
     {
         Time.timeScale = 1;
         cur_points = 0;
+        cur_cristals = 0;
         cur_lifes = 3;
     }
 
@@ -32,6 +35,7 @@ public class uiManager : MonoBehaviour
     public void Update()
     {     
         pointsText.text = "" + cur_points;
+        cristalText.text = "P: " + cur_cristals + "/ 5";
 
         if (cur_lifes == 3)
         {
@@ -87,5 +91,10 @@ public class uiManager : MonoBehaviour
             Time.timeScale = 0;
             panelgameover.SetActive(true);
         }
+    }
+
+    public void cristalsUpdate()
+    {
+            cur_cristals++;
     }
 }

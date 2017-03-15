@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScrewCollect : MonoBehaviour
+public class Collect : MonoBehaviour
 { 
     public uiManager uiObj;
+    //public GameObject gmObj;
 
 	// Use this for initialization
 	void Start ()
@@ -14,9 +15,16 @@ public class ScrewCollect : MonoBehaviour
 	
     void OnTriggerEnter2D(Collider2D collision)
     {
+        /*
         if(collision.gameObject.tag == "Player")
         {
             uiObj.pointsUpdate();
+            Destroy(gameObject);
+        }
+        */
+        if(collision.gameObject.tag == "Player")
+        {
+            uiObj.cristalsUpdate();
             Destroy(gameObject);
         }
     }
