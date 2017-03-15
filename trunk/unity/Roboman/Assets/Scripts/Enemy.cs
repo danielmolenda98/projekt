@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     public uiManager uiObj;
     public float respawnTime = 0.5f;
-    public Vector2 spawnPoint;
 
     private void Start()
     {
