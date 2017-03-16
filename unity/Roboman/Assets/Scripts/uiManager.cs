@@ -28,7 +28,7 @@ public class uiManager : MonoBehaviour
         Time.timeScale = 1;
         cur_points = 0;
         cur_cristals = 0;
-        cur_lifes = 3;
+        cur_lifes = 6;
     }
 
     // Update is called once per frame
@@ -37,21 +37,21 @@ public class uiManager : MonoBehaviour
         pointsText.text = "" + cur_points;
         cristalText.text = "" + cur_cristals + " / 5";
 
-        if (cur_lifes == 3)
+        if (cur_lifes == 6)
         {
             lifeCPU.enabled = true;
             lifeCPU1.enabled = true;
             lifeCPU2.enabled = true;
         }
 
-        if (cur_lifes == 2)
+        if (cur_lifes == 4)
         {
             lifeCPU.enabled = true;
             lifeCPU1.enabled = true;
             lifeCPU2.enabled = false;
         }
 
-        if (cur_lifes == 1)
+        if (cur_lifes == 2)
         {
             lifeCPU.enabled = true;
             lifeCPU1.enabled = false;
