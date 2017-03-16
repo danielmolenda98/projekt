@@ -7,6 +7,7 @@ public class Respawn : MonoBehaviour
     public Vector2 spawnPoint;
     public float respawnTime = 2f;
     public uiManager uiObj;
+    public GameObject player;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class Respawn : MonoBehaviour
 
     public void KillPlayer()
     {
-        StartCoroutine(PlayerDie());
+        StartCoroutine(playerDie());
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -23,14 +24,14 @@ public class Respawn : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
-            uiObj.lifesUpdate();
+            StartCoroutine(playerDie());
         }
     }
 
-    public IEnumerator PlayerDie()
+    public IEnumerator playerDie()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         yield return new WaitForSeconds(respawnTime);
-        gameObject.transform.position = spawnPoint;
+        player.transform.position = spawnPoint;
     }
 }
