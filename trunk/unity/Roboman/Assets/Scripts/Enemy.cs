@@ -5,27 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float respawnTime = 0.5f;
-    public uiManager uiObj;
-
-    private void Start()
-    {
-        uiObj = GameObject.FindObjectOfType(typeof(uiManager)) as uiManager;
-    }
+    public GameObject gmObj;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision is CircleCollider2D)
+        if (collision.gameObject.tag == "Player")
         {
             gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
             StartCoroutine(destroyEnemy()); 
-            GetComponent<Collider2D>().enabled = false; 
-        }
-
-        else if (collision is BoxCollider2D)
-        {
-           collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
-           collision.gameObject.GetComponent<Respawn>().KillPlayer();
-           uiObj.lifesUpdate();
         }
     }
 
@@ -33,6 +20,7 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(respawnTime);
-        Destroy(gameObject);
+        Destroy(gmObj);
     }
+
 }
