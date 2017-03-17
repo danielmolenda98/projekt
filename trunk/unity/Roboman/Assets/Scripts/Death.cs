@@ -5,7 +5,7 @@ public class Death : MonoBehaviour
 {
     public Vector3 spawnPoint;
     public uiManager uiObj;
-    public GameObject gmObj;
+    public GameObject player;
     public float respawnTime = 0.5f;
     private void Start()
     {
@@ -27,6 +27,6 @@ public class Death : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
-        gmObj.transform.position = spawnPoint;
+        player.transform.position = spawnPoint;
     }
 }

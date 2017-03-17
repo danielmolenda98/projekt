@@ -5,12 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
-	// Update is called once per frame
-	void Update ()
+    public GameObject panelPause;
+    //public GameObject button;
+
+    // Update is called once per frame
+  /*  void Update ()
     {
-		if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("menu");
+            panelPause.SetActive(true);
+            Time.timeScale = 0;
         }
 	}
+    */
 }
