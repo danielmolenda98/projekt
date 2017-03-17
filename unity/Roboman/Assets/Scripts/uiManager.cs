@@ -10,13 +10,15 @@ public class uiManager : MonoBehaviour
     public Text pointsText;
     public Text cristalText;
     public GameObject panelgameover;
+    public GameObject panelPause;
+
 
     public int nextlvl;
     public float time = 2f;
     int cur_points; // current points
     int cur_lifes; // current lifes
     int cur_cristals;
-
+    
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
     public RawImage lifeCPU2;
@@ -65,6 +67,12 @@ public class uiManager : MonoBehaviour
             lifeCPU2.enabled = false;
 
             panelgameover.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            panelPause.SetActive(true);
             Time.timeScale = 0;
         }
     }

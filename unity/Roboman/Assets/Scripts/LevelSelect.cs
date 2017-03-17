@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System;
 
 public class LevelSelect : MonoBehaviour
 {
@@ -12,4 +13,12 @@ public class LevelSelect : MonoBehaviour
     {
 		Application.Quit();
 	}
+
+    public void input()
+    {
+        if(Input.GetButton("Play"))
+        {
+            Time.timeScale = 1;
+        }
+    }
 }
