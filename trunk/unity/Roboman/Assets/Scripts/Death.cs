@@ -25,7 +25,7 @@ public class Death : MonoBehaviour
 
     public IEnumerator playerDie()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
         gmObj.transform.position = spawnPoint;
     }
