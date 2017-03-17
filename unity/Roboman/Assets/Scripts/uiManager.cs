@@ -69,12 +69,6 @@ public class uiManager : MonoBehaviour
             panelgameover.SetActive(true);
             Time.timeScale = 0;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            panelPause.SetActive(true);
-            Time.timeScale = 0;
-        }
     }
 
     public void pointsUpdate()
