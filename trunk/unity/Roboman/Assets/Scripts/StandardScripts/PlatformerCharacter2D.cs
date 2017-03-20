@@ -23,7 +23,10 @@ namespace UnityStandardAssets._2D
         private bool isDying = false;
         public float respawnTime = 0.5f;
         public Vector3 spawnPoint;
+        public BoxCollider2D box;
+        public CircleCollider2D circle;
         
+
 
         private void Awake()
         {
@@ -32,6 +35,8 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            box = GetComponent<BoxCollider2D>();
+            circle = GetComponent<CircleCollider2D>();
         }
 
         private void FixedUpdate()
@@ -109,7 +114,10 @@ namespace UnityStandardAssets._2D
             m_Anim.SetTrigger("Death");
             m_Rigidbody2D.isKinematic = true;
             StartCoroutine(playerDie());
+            box.enabled = false;
+            circle.enabled = false;
         }
+        
         public IEnumerator playerDie()
         {
             yield return new WaitForSeconds(1f);
@@ -117,6 +125,8 @@ namespace UnityStandardAssets._2D
             gameObject.transform.position = spawnPoint;
             m_Rigidbody2D.isKinematic = false;
             isDying = false;
+            box.enabled = true;
+            circle.enabled = true;
         }
     }
 }
