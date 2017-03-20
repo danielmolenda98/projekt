@@ -59,41 +59,44 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-            // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
+            if (isDying == false)
             {
-                // If the character has a ceiling preventing them from standing up, keep them crouching
-                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
+                // If crouching, check to see if the character can stand up
+                if (!crouch && m_Anim.GetBool("Crouch"))
                 {
-                    crouch = true;
+                    // If the character has a ceiling preventing them from standing up, keep them crouching
+                    if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
+                    {
+                        crouch = true;
+                    }
                 }
-            }
-  
-            m_Anim.SetBool("Crouch", crouch);
-            
-            if (m_Grounded || m_AirControl)
-            {                
-                move = (crouch ? move*m_CrouchSpeed : move);                             
-                m_Anim.SetFloat("Speed", Mathf.Abs(move));                              
-                m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
-               
-                if (move > 0 && !m_FacingRight)
-                {
-                    Flip();
-                }
-                else if (move < 0 && m_FacingRight)
-                {
-                    Flip();
-                }
-            }
 
-            // If the player should jump...
-            if (m_Grounded && jump && m_Anim.GetBool("Ground"))
-            {
-                // Add a vertical force to the player.
-                m_Grounded = false;
-                m_Anim.SetBool("Ground", false);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                m_Anim.SetBool("Crouch", crouch);
+
+                if (m_Grounded || m_AirControl)
+                {
+                    move = (crouch ? move * m_CrouchSpeed : move);
+                    m_Anim.SetFloat("Speed", Mathf.Abs(move));
+                    m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+
+                    if (move > 0 && !m_FacingRight)
+                    {
+                        Flip();
+                    }
+                    else if (move < 0 && m_FacingRight)
+                    {
+                        Flip();
+                    }
+                }
+
+                // If the player should jump...
+                if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+                {
+                    // Add a vertical force to the player.
+                    m_Grounded = false;
+                    m_Anim.SetBool("Ground", false);
+                    m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                }
             }
         }
 

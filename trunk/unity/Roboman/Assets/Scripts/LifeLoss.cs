@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class LifeLoss : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class LifeLoss : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
+            collision.gameObject.GetComponent<PlatformerCharacter2D>().Die();
             uiObj.lifesUpdate();
             collision.gameObject.GetComponent<Respawn>().KillPlayer();
             StartCoroutine(playerDie());
