@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour
 {
     public GameObject panelPause;
-    //public GameObject button;
+    public GameObject button;
 
-    // Update is called once per frame
-  /*  void Update ()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            panelPause.SetActive(true);
-            Time.timeScale = 0;
-        }
-	}
-    */
+    //Update is called once per frame
+     void Update ()
+      {
+          if (Input.GetKeyDown(KeyCode.Escape))
+          {
+              panelPause.SetActive(true);
+              Time.timeScale = 0;
+          }
+      }
+      
 }
