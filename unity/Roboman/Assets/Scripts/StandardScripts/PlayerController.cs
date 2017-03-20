@@ -11,8 +11,11 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     private Transform GroundCheck;
     public bool grounded;
+    private bool isDying = false;
     [SerializeField] private bool airControl = false;
     [Range(0, 1)][SerializeField] private float crouchSpeed = .36f;
+    public float respawnTime = 0.5f;
+    public Vector3 spawnPoint;
 
     void Start()
     {
@@ -23,16 +26,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalMove = Input.GetAxis("Horizontal");
-        rgdBody.velocity = new Vector2(horizontalMove * heroSpeed, rgdBody.velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isDying == false)
         {
-            rgdBody.AddForce(new Vector2(0f, jumpForce));
-            anim.SetTrigger("Jump");
-        }
+            float horizontalMove = Input.GetAxis("Horizontal");
+            rgdBody.velocity = new Vector2(horizontalMove * heroSpeed, rgdBody.velocity.y);
 
-        anim.SetFloat("speed", Mathf.Abs(horizontalMove));
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rgdBody.AddForce(new Vector2(0f, jumpForce));
+                anim.SetTrigger("Jump");
+            }
+
+            anim.SetFloat("speed", Mathf.Abs(horizontalMove));
+        }
     }
 
     public void Move(float move, bool crouch, bool jump)
@@ -61,5 +67,21 @@ public class PlayerController : MonoBehaviour
         Vector3 heroScale = gameObject.transform.localScale;
         heroScale.x *= -1;
         gameObject.transform.localScale = heroScale;
+    }
+
+    public void Die()
+    {
+        isDying = true;
+        anim.SetTrigger("Death");
+        rgdBody.isKinematic = true;
+        StartCoroutine(playerDie());
+    }
+    public IEnumerator playerDie()
+    {
+        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(respawnTime);
+        gameObject.transform.position = spawnPoint;
+        rgdBody.isKinematic = false;
+        isDying = false;
     }
 }
