@@ -9,9 +9,10 @@ public class uiManager : MonoBehaviour
 {
     public Text pointsText;
     public Text cristalText;
-    public GameObject panelgameover;
+    public GameObject panelGameOver;
     public GameObject panelPause;
 
+    private PauseMenu pauseMenu;
 
     public int nextlvl;
     public float time = 2f;
@@ -27,10 +28,13 @@ public class uiManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Debug.Log("Timescale = 1");
         Time.timeScale = 1;
         cur_points = 0;
         cur_cristals = 0;
         cur_lifes = 3;
+
+        pauseMenu = panelPause.GetComponent<PauseMenu>();
     }
 
     // Update is called once per frame
@@ -66,8 +70,9 @@ public class uiManager : MonoBehaviour
             lifeCPU1.enabled = false;
             lifeCPU2.enabled = false;
 
-            panelgameover.SetActive(true);
+            panelGameOver.SetActive(true);
             Time.timeScale = 0;
+            pauseMenu.isDead = true;
         }
     }
 
@@ -91,7 +96,7 @@ public class uiManager : MonoBehaviour
         if (cur_lifes == 0)
         {
             Time.timeScale = 0;
-            panelgameover.SetActive(true);
+            panelGameOver.SetActive(true);
         }
     }
 

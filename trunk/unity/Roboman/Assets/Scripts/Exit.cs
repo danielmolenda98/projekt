@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
-    public GameObject panelPause;
-    public GameObject button;
+   public GameObject panelPause;
+   // public GameObject button;
 
     //Update is called once per frame
      void Update ()
