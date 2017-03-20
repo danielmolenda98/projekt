@@ -223,9 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b510651074beb46b5622ccfb622917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 111.2, y: 17.4, z: 0}
+  spawnPoint: {x: 0, y: 0, z: 0}
   uiObj: {fileID: 0}
-  gmObj: {fileID: 1762170851406868}
+  player: {fileID: 0}
   respawnTime: 0.5
 --- !u!212 &212158936874727408
 SpriteRenderer:
