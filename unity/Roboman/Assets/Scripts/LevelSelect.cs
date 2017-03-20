@@ -18,6 +18,7 @@ public class LevelSelect : MonoBehaviour
     {
         if(Input.GetButton("Play"))
         {
+            Debug.Log("Timescale = 1");
             Time.timeScale = 1;
         }
     }

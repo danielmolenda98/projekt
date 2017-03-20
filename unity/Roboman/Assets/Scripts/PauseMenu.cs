@@ -5,6 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseUI;
     private bool paused = false;
+    public bool isDead = false;
 
     void Start()
     {
@@ -25,10 +26,10 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0;
         }
         
-        if (!paused)
+        if (!paused && !isDead)
         {
             PauseUI.SetActive(false);
-            Time.timeScale = 1;
+                Time.timeScale = 1;
         }
 	}
 
@@ -39,6 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        isDead = false;
         Application.LoadLevel(Application.loadedLevel);
     }
 
