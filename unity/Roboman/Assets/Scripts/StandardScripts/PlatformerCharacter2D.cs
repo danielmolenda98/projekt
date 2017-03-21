@@ -20,11 +20,12 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-        private bool isDying = false;
+        public bool isDying = false;
         public float respawnTime = 0.5f;
         public Vector3 spawnPoint;
         public BoxCollider2D box;
         public CircleCollider2D circle;
+        public LifeLoss life;
         
 
 
@@ -119,21 +120,17 @@ namespace UnityStandardAssets._2D
             
                 isDying = true;
                 m_Anim.SetTrigger("Death");
-                m_Rigidbody2D.isKinematic = true;
                 StartCoroutine(playerDie());
                 box.enabled = false;
-                circle.enabled = false;
         }
         
         public IEnumerator playerDie()
         {
-            yield return new WaitForSeconds(1f);
-            yield return new WaitForSeconds(respawnTime);
-            gameObject.transform.position = spawnPoint;
-            m_Rigidbody2D.isKinematic = false;
+           life.playersDie();
+           yield return new WaitForSeconds(0.3f);
+           yield return new WaitForSeconds(respawnTime);
             isDying = false;
             box.enabled = true;
-            circle.enabled = true;
         }
     }
 }
