@@ -24,7 +24,6 @@ namespace UnityStandardAssets._2D
             transform.parent = null;
         }
 
-
         // Update is called once per frame
         private void Update()
         {
@@ -44,9 +43,7 @@ namespace UnityStandardAssets._2D
 
             Vector3 aheadTargetPos = target.position + m_LookAheadPos + Vector3.forward*m_OffsetZ;
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
-
             transform.position = newPos;
-
             m_LastTargetPosition = target.position;
         }
     }
