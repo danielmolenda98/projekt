@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spring : MonoBehaviour
+public class Spring : MonoBehaviour
 {
     public RigidbodyConstraints constraints;
     public bool freezePosition;

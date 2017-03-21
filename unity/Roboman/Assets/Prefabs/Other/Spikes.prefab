@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4900067359279208}
   m_Layer: 0
-  m_Name: kolce
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,6 +479,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114077997917487448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,6 +494,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114212237451625116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -505,6 +509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114256130403544156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -518,6 +524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114277727839802114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -531,6 +539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114629825642790424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -544,6 +554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!114 &114647258087930348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -557,6 +569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiObj: {fileID: 0}
   spawnPoint: {x: 0, y: 0}
+  respawnTime: 2
+  player: {fileID: 0}
 --- !u!212 &212000340056358320
 SpriteRenderer:
   m_ObjectHideFlags: 1
