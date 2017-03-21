@@ -14,11 +14,10 @@ public class LevelSelect : MonoBehaviour
 		Application.Quit();
 	}
 
-    public void input()
+    public void Inputs()
     {
         if(Input.GetButton("Play"))
         {
-            Debug.Log("Timescale = 1");
             Time.timeScale = 1;
         }
     }

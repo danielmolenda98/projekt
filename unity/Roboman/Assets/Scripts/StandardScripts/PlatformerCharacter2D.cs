@@ -11,7 +11,7 @@ namespace UnityStandardAssets._2D
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
-       
+
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
@@ -26,8 +26,7 @@ namespace UnityStandardAssets._2D
         public BoxCollider2D box;
         public CircleCollider2D circle;
         public LifeLoss life;
-        
-
+        private int isJumping = 2;
 
         private void Awake()
         {
@@ -89,11 +88,23 @@ namespace UnityStandardAssets._2D
                     {
                         Flip();
                     }
-
-
+                }
                     // If the player should jump...
-                    if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+                    if (jump)
                     {
+                        if (isJumping == 2)
+                        {
+                            m_Rigidbody2D.AddForce(Vector2.up * 800);
+                            isJumping = 1;
+                        }
+
+                        else if (isJumping == 1)
+                        {
+                            m_Rigidbody2D.velocity = Vector3.zero;
+                            m_Rigidbody2D.AddForce(Vector2.up * 800);
+                            isJumping = 0;
+                        }
+
                         // Add a vertical force to the player.
                         m_Grounded = false;
                         m_Anim.SetBool("Ground", false);
@@ -101,8 +112,6 @@ namespace UnityStandardAssets._2D
                     }
                 }
             }
-        }
-        
 
         private void Flip()
         {
@@ -117,20 +126,28 @@ namespace UnityStandardAssets._2D
 
         public void Die()
         {
+            isDying = true;
+            m_Anim.SetTrigger("Death");
             
-                isDying = true;
-                m_Anim.SetTrigger("Death");
-                StartCoroutine(playerDie());
-                box.enabled = false;
+            StartCoroutine(playerDie());
+            box.enabled = false;
         }
         
         public IEnumerator playerDie()
         {
-           life.playersDie();
-           yield return new WaitForSeconds(0.3f);
-           yield return new WaitForSeconds(respawnTime);
+            life.playersDie();
+            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(respawnTime);
             isDying = false;
             box.enabled = true;
+        }
+
+        void OnCollisionEnter2D(Collision2D col)
+        {
+            if (col.gameObject.tag == "Ground")
+            {
+                isJumping = 2;
+            }
         }
     }
 }
