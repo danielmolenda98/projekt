@@ -17,7 +17,7 @@ public class Collect : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            uiObj.pointsUpdate();
+            uiObj.pointsUpdate(); //collect points
             Destroy(gameObject);
         }
     }

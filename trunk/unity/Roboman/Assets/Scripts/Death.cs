@@ -19,7 +19,7 @@ public class Death : MonoBehaviour
         if (collision.gameObject.tag == "Player" && isDying == false)
         {
             collision.gameObject.GetComponent<PlatformerCharacter2D>().Die();
-            uiObj.lifesUpdate();          
+            //uiObj.lifesUpdate();          
         }
     }
 

@@ -22,11 +22,11 @@ public class LifeLoss : MonoBehaviour
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             collision.gameObject.GetComponent<PlatformerCharacter2D>().Die();
             uiObj.lifesUpdate();
-            collision.gameObject.GetComponent<Respawn>().KillPlayer();
-            StartCoroutine(playerDie());
+            //collision.gameObject.GetComponent<Respawn>().KillPlayer();
+            StartCoroutine(playersDie());
         }
     }
-    public IEnumerator playerDie()
+    public IEnumerator playersDie()
     {
         yield return new WaitForSeconds(0.5f);
         yield return new WaitForSeconds(respawnTime);
