@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
 
@@ -7,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float respawnTime = 0.5f;
     public GameObject enemy;
-    public Death death;
+    public LifeLoss lifeLoss;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,16 +16,15 @@ public class Enemy : MonoBehaviour
                 return;
 
             gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
-            death.isDying = true;
-            StartCoroutine(destroyEnemy()); 
+            lifeLoss.isDying = true;
+            StartCoroutine(DestroyEnemy()); 
         }
     }
 
-    public IEnumerator destroyEnemy()
+    public IEnumerator DestroyEnemy()
     {
         yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(respawnTime);
         Destroy(enemy);
     }
-
 }
