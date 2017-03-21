@@ -8,6 +8,7 @@ public class LifeLoss : MonoBehaviour
     public Vector2 spawnPoint;
     public float respawnTime = 2f;
     public GameObject player;
+    public bool isDying;
 
     // Use this for initialization
     void Start()
@@ -17,12 +18,11 @@ public class LifeLoss : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && isDying == false)
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             collision.gameObject.GetComponent<PlatformerCharacter2D>().Die();
             uiObj.lifesUpdate();
-            //collision.gameObject.GetComponent<Respawn>().KillPlayer();
             StartCoroutine(playersDie());
         }
     }
