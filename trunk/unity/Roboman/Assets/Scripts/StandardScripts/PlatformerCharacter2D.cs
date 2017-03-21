@@ -71,6 +71,7 @@ namespace UnityStandardAssets._2D
                     }
                 }
 
+
                 m_Anim.SetBool("Crouch", crouch);
 
                 if (m_Grounded || m_AirControl)
@@ -87,18 +88,20 @@ namespace UnityStandardAssets._2D
                     {
                         Flip();
                     }
-                }
 
-                // If the player should jump...
-                if (m_Grounded && jump && m_Anim.GetBool("Ground"))
-                {
-                    // Add a vertical force to the player.
-                    m_Grounded = false;
-                    m_Anim.SetBool("Ground", false);
-                    m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+                    // If the player should jump...
+                    if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+                    {
+                        // Add a vertical force to the player.
+                        m_Grounded = false;
+                        m_Anim.SetBool("Ground", false);
+                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                    }
                 }
             }
         }
+        
 
         private void Flip()
         {
@@ -113,12 +116,13 @@ namespace UnityStandardAssets._2D
 
         public void Die()
         {
-            isDying = true;
-            m_Anim.SetTrigger("Death");
-            m_Rigidbody2D.isKinematic = true;
-            StartCoroutine(playerDie());
-            box.enabled = false;
-            circle.enabled = false;
+            
+                isDying = true;
+                m_Anim.SetTrigger("Death");
+                m_Rigidbody2D.isKinematic = true;
+                StartCoroutine(playerDie());
+                box.enabled = false;
+                circle.enabled = false;
         }
         
         public IEnumerator playerDie()

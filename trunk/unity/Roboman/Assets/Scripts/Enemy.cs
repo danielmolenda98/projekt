@@ -6,12 +6,14 @@ public class Enemy : MonoBehaviour
 {
     public float respawnTime = 0.5f;
     public GameObject gmObj;
+    public Death death;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
+            death.isDying = true;
             StartCoroutine(destroyEnemy()); 
         }
     }
