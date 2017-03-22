@@ -81,7 +81,7 @@ Material:
       second: 1
     - first:
         name: _CubemapEmessive
-      second: 2.09
+      second: 4
     - first:
         name: _Cutoff
       second: 0.5
@@ -90,7 +90,7 @@ Material:
       second: 1
     - first:
         name: _DotFallouf
-      second: 1.36
+      second: -2.96
     - first:
         name: _DstBlend
       second: 0
@@ -102,7 +102,7 @@ Material:
       second: 0.5
     - first:
         name: _Metalic
-      second: 2.43
+      second: 3.86
     - first:
         name: _Metallic
       second: 0
