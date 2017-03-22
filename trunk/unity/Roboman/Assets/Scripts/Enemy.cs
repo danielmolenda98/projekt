@@ -12,9 +12,9 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (collision.gameObject.GetComponent<PlatformerCharacter2D>().isDying)
+            if (collision.gameObject.GetComponent<PlatformerCharacter2D>().isDying)//|| lifeLoss.isDying == true)
                 return;
-
+            Debug.Log("Enemy Dead");
             gameObject.GetComponent<Animator>().SetTrigger("deathPumpkin");
             lifeLoss.isDying = true;
             StartCoroutine(DestroyEnemy()); 
