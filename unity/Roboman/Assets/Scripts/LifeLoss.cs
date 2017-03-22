@@ -20,6 +20,7 @@ public class LifeLoss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && isDying == false)
         {
+            Debug.Log("Player Dead");
             collision.gameObject.GetComponent<Animator>().SetTrigger("Death");
             collision.gameObject.GetComponent<PlatformerCharacter2D>().Die();
             uiObj.lifesUpdate();
