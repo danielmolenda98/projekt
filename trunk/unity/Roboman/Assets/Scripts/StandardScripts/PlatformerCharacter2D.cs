@@ -57,7 +57,7 @@ namespace UnityStandardAssets._2D
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
 
-        public void Move(float move, bool crouch, bool jump)
+        public void Move(float move, bool jump)
         {
             if (isDying == false)
             {
@@ -72,7 +72,7 @@ namespace UnityStandardAssets._2D
                 }*/
 
 
-                m_Anim.SetBool("Crouch", crouch);
+               // m_Anim.SetBool("Crouch", crouch);
 
                 if (m_Grounded || m_AirControl)
                 {
