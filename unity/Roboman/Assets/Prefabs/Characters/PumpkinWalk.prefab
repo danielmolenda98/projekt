@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114038082955090548}
   - component: {fileID: 114942774189440012}
   m_Layer: 0
-  m_Name: pumpkinWalk
+  m_Name: PumpkinWalk
   m_TagString: Pumpkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
