@@ -29,7 +29,7 @@ public class LifeLoss : MonoBehaviour
     }
     public IEnumerator playersDie()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(respawnTime);
         player.transform.position = spawnPoint;
     }
