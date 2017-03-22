@@ -23,7 +23,8 @@ public class uiManager : MonoBehaviour
     public RawImage lifeCPU;
     public RawImage lifeCPU1;
     public RawImage lifeCPU2;
-
+    public RawImage lifeCPU3;
+    public RawImage lifeCPU4;
 
     // Use this for initialization
     void Start()
@@ -43,11 +44,31 @@ public class uiManager : MonoBehaviour
         pointsText.text = "" + cur_points;
         cristalText.text = "" + cur_cristals + " / 5";
 
+        if (cur_lifes == 5)
+        {
+            lifeCPU.enabled = true;
+            lifeCPU1.enabled = true;
+            lifeCPU2.enabled = true;
+            lifeCPU3.enabled = true;
+            lifeCPU4.enabled = true;
+        }
+
+        if (cur_lifes == 4)
+        {
+            lifeCPU.enabled = true;
+            lifeCPU1.enabled = true;
+            lifeCPU2.enabled = true;
+            lifeCPU3.enabled = true;
+            lifeCPU4.enabled = false;
+        }
+
         if (cur_lifes == 3)
         {
             lifeCPU.enabled = true;
             lifeCPU1.enabled = true;
             lifeCPU2.enabled = true;
+            lifeCPU3.enabled = false;
+            lifeCPU4.enabled = false;
         }
 
         if (cur_lifes == 2)
@@ -55,6 +76,8 @@ public class uiManager : MonoBehaviour
             lifeCPU.enabled = true;
             lifeCPU1.enabled = true;
             lifeCPU2.enabled = false;
+            lifeCPU3.enabled = false;
+            lifeCPU4.enabled = false;
         }
 
         if (cur_lifes == 1)
@@ -62,6 +85,8 @@ public class uiManager : MonoBehaviour
             lifeCPU.enabled = true;
             lifeCPU1.enabled = false;
             lifeCPU2.enabled = false;
+            lifeCPU3.enabled = false;
+            lifeCPU4.enabled = false;
         }
 
         if (cur_lifes == 0)
@@ -69,6 +94,8 @@ public class uiManager : MonoBehaviour
             lifeCPU.enabled = false;
             lifeCPU1.enabled = false;
             lifeCPU2.enabled = false;
+            lifeCPU3.enabled = false;
+            lifeCPU4.enabled = false;
 
             panelGameOver.SetActive(true);
             Time.timeScale = 0;
